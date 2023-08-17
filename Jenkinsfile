@@ -16,7 +16,7 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                sh 'sudo docker run -p 8081:8081 -d python-img1'
+                sh 'sudo docker run -d -p 8082:8082 python-img1'
             }
         }
     }   
